@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+
+}
+
+header {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    justify-content: flex-end;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    padding: 0px 15px;
+    color: #42429b;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+a:nth-child(2) {
+    color: #bdbdd8;
+    
+}
+
+span:hover{
+    color: #42429b;
+    opacity: 1;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+
+}
+
+.background {
+    width: 390px;
+    height: 100%;
+    background-color: #42429b;
+    opacity: 0.2;
+    position: fixed;
+    right: 0px;
+    top: 0;
+    z-index: -1;
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #42429b;
+    width: 50%;
+}
+
+p {
+    font-size: 1em;
+    color: #aeaebe;
+    font-weight: 500;
+    margin: 20px 0;
+    text-align: justify;
+    width: 70%;
+    line-height: 2;
+}
+
+button {
+    width: 140px;
+    padding: 8px;
+    border-radius: 30px;
+    border: none;
+    background-color: #9499EA;
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #42429b;
+}
+
+.image-section img {
+    width: 400px;
+    margin-top: -50px;
+}
+
+@media (max-width: 900px) {
+    header {
+        position: sticky; /* Faz o header ficar fixo no topo enquanto rola */
+        top: 0; /* Garante que o header fique no topo da tela */
+        width: 100%; /* Garante que o header ocupe toda a largura da tela */
+        background-color: #fff; /* Adiciona um fundo para garantir visibilidade */
+        z-index: 10; /* Garante que o header fique acima do conteúdo */
+        padding: 10px 20px; /* Ajuste no padding para uma boa aparência */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil para destacar */
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 50px 20px;
+        display: flex;
+        align-items: center; /* Centraliza o conteúdo da container horizontalmente */
+        justify-content: center; /* Centraliza o conteúdo da container verticalmente */
+    }
+
+    .text-section {
+        max-width: 100%;
+        text-align: center; /* Centraliza o texto dentro da text-section */
+    }
+
+    h1 {
+        font-size: 2.2em;
+        text-align: center; /* Centraliza o texto do h1 */
+        margin: 0 auto; /* Garante que o h1 seja centralizado */
+    }
+
+    p {
+        width: 90%;
+    }
+
+    .image-section img {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .background {
+        background-color: transparent;
+    }
+}
