@@ -20,9 +20,9 @@
 
 <ol>
 <li>Clone este repositório:
-<pre><code>git clone https://github.com/Queias007/projeto-estilizado-css-html.git</code></pre>
+<pre><code>https://queias007.github.io/projeto-estilizado-css-html/</code></pre>
 </li>
-<li>Abra o arquivo <code>index.html</code> no navegador.</li>
+
 </ol>
 
 <hr>
